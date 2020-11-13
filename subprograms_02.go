@@ -17,8 +17,10 @@ func main(){
 	//var inhaArray [7] string //array
 	var inhaSlice [] string //slice
 	inhaSlice = make([]string, 7)
-//	inhaSlice := []string{"i","n","h","a" }
-        nums := []int{1, 2, -3, 4, 5}
+	inhaSlice = []string{"i","n","h","a" }
+        nums := []int{1, 2, 3, 4, 5}
+	mySlice :=  inhaSlice[:]
+	fmt.Println(mySlice)
 	inhaSlice[0] = "i"
 	inhaSlice[1] = "n"
 	inhaSlice[2] = "h"
